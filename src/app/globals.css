@@ -1,0 +1,126 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* ===== Marca MAC — premium: preto/grafite + dourado champagne ===== */
+  --color-surface: #ffffff;
+  --color-surface-muted: #f6f4ef; /* bege institucional claro */
+
+  --color-ink: #14151a; /* preto profundo */
+  --color-ink-soft: #1d1f25;
+  --color-graphite: #2b2f36; /* cinza escuro */
+
+  --color-gold-50: #f6efe2;
+  --color-gold-200: #e3cfa6;
+  --color-gold-400: #cdac79;
+  --color-gold-500: #b89968; /* dourado champagne */
+  --color-gold-600: #9c7f53;
+  --color-gold-700: #7d6540;
+
+  --color-text: #1d1f25;
+  --color-text-muted: #6b6f78;
+  --color-text-invert: #f3f1ec;
+  --color-border: #e7e2d8;
+  --color-border-dark: rgba(255, 255, 255, 0.12);
+
+  --color-wpp: #25d366;
+  --color-wpp-dark: #1da851;
+
+  /* Radii & shadow */
+  --radius-xl: 1.1rem;
+  --radius-2xl: 1.6rem;
+  --shadow-soft: 0 10px 40px -18px rgba(20, 21, 26, 0.25);
+  --shadow-gold: 0 14px 50px -20px rgba(184, 153, 104, 0.5);
+
+  --font-sans: var(--font-plus-jakarta), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-fraunces), ui-serif, Georgia, serif;
+
+  --animate-fade-up: fade-up 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes wpp-pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+    }
+    70% {
+      box-shadow: 0 0 0 16px rgba(37, 211, 102, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: color-mix(in oklab, var(--color-gold-500) 35%, white);
+  color: var(--color-ink);
+}
+
+/* Hero: textura sobre imagem/gradiente (premium dark) */
+.hero-overlay {
+  background-image:
+    linear-gradient(
+      180deg,
+      rgba(20, 21, 26, 0.55) 0%,
+      rgba(20, 21, 26, 0.2) 35%,
+      rgba(20, 21, 26, 0.9) 100%
+    ),
+    radial-gradient(
+      120% 90% at 70% 8%,
+      rgba(184, 153, 104, 0.22) 0%,
+      transparent 55%
+    );
+}
+
+/* Fundo premium para seções escuras (substitui foto ausente) */
+.bg-premium-dark {
+  background-color: #14151a;
+  background-image:
+    radial-gradient(120% 80% at 80% 0%, rgba(184, 153, 104, 0.18) 0%, transparent 50%),
+    radial-gradient(100% 100% at 0% 100%, rgba(43, 47, 54, 0.9) 0%, transparent 60%);
+}
+
+/* Campos de formulário */
+.field-input {
+  width: 100%;
+  border-radius: 0.625rem;
+  border: 1.5px solid var(--color-border);
+  background: #fafafa;
+  padding: 0.7rem 0.85rem;
+  font-size: 0.95rem;
+  color: var(--color-text);
+  transition: border-color 0.2s, background 0.2s;
+}
+.field-input:focus {
+  outline: none;
+  border-color: var(--color-gold-500);
+  background: #fff;
+}
+
+/* Pseudo-foto: gradiente elegante quando ainda não há imagem real */
+.placeholder-shot {
+  background-color: #2b2f36;
+  background-image:
+    linear-gradient(180deg, rgba(20, 21, 26, 0.15) 0%, rgba(20, 21, 26, 0.85) 100%),
+    radial-gradient(120% 120% at 30% 0%, var(--shot-a, #5b6470) 0%, #20232a 60%, #14151a 100%);
+}
