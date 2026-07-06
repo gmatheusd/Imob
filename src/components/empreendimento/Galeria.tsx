@@ -153,7 +153,7 @@ export function Galeria({
                   </span>
                 )}
                 {imgAberta.area && (
-                  <span className="rounded-full bg-gold-500/20 px-3.5 py-1.5 text-sm font-medium text-gold-300">
+                  <span className="rounded-full bg-gold-500 px-3.5 py-1.5 text-sm font-semibold text-ink">
                     {imgAberta.area}
                   </span>
                 )}
