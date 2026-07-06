@@ -176,7 +176,7 @@ export const siteConfig = {
       id: "faq-1",
       question: "Quais empreendimentos o Danilo comercializa?",
       answer:
-        "O portfólio reúne lançamentos selecionados de médio e alto padrão em São Paulo, com empreendimentos em Vila Clementino, Brooklin, Vila Mariana, Pinheiros e Vila Monte Alegre. Cada um tem página própria com plantas, diferenciais e lazer.",
+        "O portfólio reúne lançamentos selecionados de médio e alto padrão em São Paulo, com empreendimentos em Vila Clementino, Brooklin, Vila Mariana, Pinheiros e São Judas. Cada um tem página própria com plantas, diferenciais e lazer.",
     },
     {
       id: "faq-2",

@@ -504,7 +504,7 @@ const DETALHES: Record<string, EmpreendimentoDetalhe> = {
     pdf: "/assets/pdfs/Book-Digital-RA81-MAC-Vila-Mariana-Marketing-2025-05-05.pdf",
   },
 
-  autoria: {
+  "sao-judas": {
     heroImage: "/assets/img/empreendimentos/mac-autoria/7.jpg",
     conceitoImage: "/assets/img/empreendimentos/mac-autoria/conceito-externo-1.jpg",
     conceito: [

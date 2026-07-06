@@ -33,7 +33,7 @@ export type Empreendimento = {
 
 /**
  * Ordem reflete a hierarquia comercial do briefing:
- * Vila Clementino + Brooklin (premium) > Vila Mariana + Pinheiros (alto) > Autoria (acessível).
+ * Vila Clementino + Brooklin (premium) > Vila Mariana + Pinheiros (alto) > São Judas (acessível).
  */
 export const empreendimentos: Empreendimento[] = [
   {
@@ -128,9 +128,9 @@ export const empreendimentos: Empreendimento[] = [
     cover: "/assets/img/empreendimentos/mac-pinheiros/1.jpg",
   },
   {
-    slug: "autoria",
-    name: "Vila Monte Alegre",
-    neighborhood: "Vila Monte Alegre",
+    slug: "sao-judas",
+    name: "São Judas",
+    neighborhood: "São Judas",
     address: "Av. Fagundes Filho, 524",
     segment: "acessivel",
     segmentLabel: "Mais acessível",

@@ -10,7 +10,7 @@ import { MessageCircle } from "lucide-react";
 export const metadata: Metadata = {
   title: "Empreendimentos",
   description:
-    "Conheça os empreendimentos MAC comercializados por Danilo Ventura: Vila Clementino, Brooklin, Vila Mariana, Pinheiros e Autoria. Lançamentos de médio e alto padrão em São Paulo.",
+    "Conheça os empreendimentos MAC comercializados por Danilo Ventura: Vila Clementino, Brooklin, Vila Mariana, Pinheiros e São Judas. Lançamentos de médio e alto padrão em São Paulo.",
 };
 
 export default function EmpreendimentosPage() {
