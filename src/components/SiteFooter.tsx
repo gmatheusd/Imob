@@ -135,9 +135,14 @@ export function SiteFooter() {
 
           {/* Linha 2: mapa do site + crédito */}
           <div className="mt-4 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-            <Link href="/mapa-do-site/" className="transition hover:text-white/70">
-              Mapa do site
-            </Link>
+            <div className="flex flex-wrap gap-x-5 gap-y-2">
+              <Link href="/mapa-do-site/" className="transition hover:text-white/70">
+                Mapa do site
+              </Link>
+              <Link href="/politica-de-privacidade/" className="transition hover:text-white/70">
+                Política de Privacidade
+              </Link>
+            </div>
             <a
               href="https://axcalidigital.com.br/"
               target="_blank"

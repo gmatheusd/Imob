@@ -20,6 +20,7 @@ const sections = [
       { label: "Sobre", href: "/sobre/" },
       { label: "Diferenciais", href: "/diferenciais/" },
       { label: "Contato", href: "/contato/" },
+      { label: "Política de Privacidade", href: "/politica-de-privacidade/" },
     ],
   },
   {

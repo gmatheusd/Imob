@@ -46,7 +46,7 @@ export const siteConfig = {
   contact: {
     phoneDisplay: "(11) 99436-8556",
     phoneE164: "+5511994368556",
-    email: "contato@daniloventura.com.br",
+    email: "danilo.ventura@dvimobdigital.com.br",
     whatsappE164: "5511994368556",
   },
 
